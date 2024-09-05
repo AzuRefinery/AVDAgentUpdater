@@ -18,4 +18,10 @@ It does a few very simple things:
 
 I found that these session hosts will usually auto update their AVD agent within a few minutes.
 
-You will need a separate process to shut down the sessionhosts, I have these processes also ready and will share them here as well.
+You will need a separate process to shut down the sessionhosts, 
+You can use the process I created here to turn off your unused session hosts which in this case will not have an active session:
+https://medium.com/@mitsuker/power-up-your-savings-azure-automation-for-avd-session-host-management-a8f9b688436a
+
+You will also want to schedule and time those properly so the shutdown occures approx. 2 hours after the power-on 
+
+
