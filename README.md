@@ -8,7 +8,7 @@ If you reach this point you will need to manually fix those unreachable VM's usi
 https://learn.microsoft.com/en-us/azure/virtual-desktop/troubleshoot-agent#your-issue-isnt-listed-here-or-wasnt-resolved
 
 This is not fun :)
-I wrote this very simple script to prevent this from happening and found that it works great and in the long term prevents session hosts from becoming unreachable.
+I wrote this very simple Powershell script to prevent this from happening and found that it works great and in the long term prevents session hosts from becoming unreachable.
 It does a few very simple things:
 
 1. Queries all Hostpools in the subscription
@@ -23,5 +23,8 @@ You can use the process I created here to turn off your unused session hosts whi
 https://medium.com/@mitsuker/power-up-your-savings-azure-automation-for-avd-session-host-management-a8f9b688436a
 
 You will also want to schedule and time those properly so the shutdown occures approx. 2 hours after the power-on 
+
+You can use this scrip manually or as part of a scheduled automation account / Azure function / Whatever works for you.
+You must also make sure the process has the proper RBAC permissions to turn on and shut down VM's/Sessionhosts
 
 
